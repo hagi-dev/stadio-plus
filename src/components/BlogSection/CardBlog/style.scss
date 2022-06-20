@@ -94,3 +94,11 @@ background: linear-gradient(140deg, rgba(96,240,235,1) 33%, rgba(45,106,244,1) 9
         transform: scale(1.1);
     }
 }
+
+@media screen and (max-width:840px) {
+    .cardBlog{
+        &:hover{
+            transform: scale(1);
+        } 
+    }
+}

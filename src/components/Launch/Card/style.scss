@@ -68,6 +68,9 @@
 @media screen and (max-width:840px){
     .card{
         transform: scale(0.9);
+        &:hover{
+            transform: scale(1);
+        } 
     }
 }
 @media screen and (max-width:600px){
