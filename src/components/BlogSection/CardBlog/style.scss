@@ -1,0 +1,96 @@
+@use '../../../assets/colors/index.scss' as color;
+
+.cardBlog{
+    width: 330px;
+    height: auto;
+    position: relative;
+    margin: 15px 10px;
+    text-align: left;
+    z-index: 10;
+    transition: all 0.3s;
+    #cardBlogBackground{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+        path{
+            fill: #0039FF;
+            opacity: 100%;
+        }
+        
+    }
+    .cardBlog__img{
+        width: 100%;
+        height: 190px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        overflow: hidden;
+        position: relative;
+        img{
+            width: 280px;
+            height: auto;
+        }
+        .iconButton{
+            position: absolute;
+            top:30px;
+            right:35px;
+            width: 41px;
+            height: 41px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            border-radius: 10px;
+            background: rgb(96,240,235);
+background: linear-gradient(140deg, rgba(96,240,235,1) 33%, rgba(45,106,244,1) 92%);
+            &:focus{
+                outline: none;
+            }
+
+            .iconButton__content{
+                width: 92%;
+                height: 92%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: color.$color_background;
+                border-radius: 10px;
+            }
+        }
+    }
+    
+    .cardBlog__text{
+        width: 100%;
+        padding: 0 10%;
+        h3{
+            margin-top: 0.5em;
+            font-family: 'Montserrat',sans-serif;
+            color: color.$color_text_dark_primary;
+            font-size: 1.12rem;
+            width: 300px;
+            font-weight: 600;
+            letter-spacing: 5%;
+        }
+        h4{
+            font-family: 'Montserrat',sans-serif;
+            font-weight: bold;
+            color: color.$color_text_dark_primary;
+            font-size: 1rem;
+            letter-spacing: 5%;
+        }
+        h5{
+            margin-top: 1em;
+            font-family: 'Montserrat',sans-serif;
+            color: color.$color_text_dark_primary;
+            font-weight: 200;
+            width: 200px;
+            font-size: 0.87rem;
+            letter-spacing: 5%;
+            padding-bottom: 10px;
+        }
+    }
+    &:hover{
+        transform: scale(1.1);
+    }
+}

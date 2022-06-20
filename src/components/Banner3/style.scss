@@ -1,0 +1,63 @@
+@use '../../assets/colors/index.scss' as color;
+
+.banner3{
+    height: 675px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    box-sizing: border-box;
+    padding: 0 8%;
+    grid-template-areas: 
+    "imgBanner contentBanner"
+    "imgBanner contentBanner";
+}
+.banner3.true{
+    .content3{
+        background: rgb(0,57,255);
+        background: radial-gradient(circle, rgba(50, 88, 223,0.5) 0%, white 50%);
+        h1{
+            color: color.$color_text_light_primary;
+            .h1__ntfs3{
+                color: color.$color_text_light_primary;
+            }
+            span{
+                color: color.$color_button_primary
+            }
+        }
+        .content__description{
+            color: color.$color_text_light_primary;
+        }
+        
+    }
+}
+
+@media screen and (max-width:1240px) {
+    .banner3{
+        height: 1000px;
+        grid-template-areas: 
+        "imgBanner imgBanner"
+        "contentBanner contentBanner";
+        .content3{
+            padding-top: 10%;
+            h1{
+                text-align: center;
+                width: 100%;
+            }
+            .content__description{
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+    .banner3{
+        height: 650px !important;
+        margin-top: 80px;
+        grid-template-rows: 400px 0.5fr;
+        padding-top: 0;
+        height: 850px;
+    }
+}

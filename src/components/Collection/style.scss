@@ -1,0 +1,102 @@
+@use '../../assets/colors/index.scss' as color;
+
+.collection{
+    text-align: left;
+    padding: 0 8%;
+    height: 600px;
+ 
+    h2{
+        margin-top: 45px;
+        margin-bottom: 61px;
+        font-family: 'Montserrat',sans-serif;
+        color: color.$color_text_secondary;
+        font-size: 1.12rem;
+        font-weight: 600;
+        text-align: left;
+        border-bottom: 1px solid color.$color_text_secondary;
+    }
+    .collection__button{
+        margin-top: 140px;
+        box-sizing: border-box;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding: 0 30%;
+        align-items: center;
+
+    }
+
+    
+}
+
+.collection.true{
+    #cardBackground{
+        path{
+            fill:transparent !important;
+            stroke: color.$color_text_secondary;
+            stroke-width: 2px;
+        }
+    }
+    .card__text{
+        h3{
+            color: color.$color_text_light_primary;
+        }
+        h4{
+            color: color.$color_text_light_primary;
+        }
+        h5{
+            color: color.$color_text_light_primary;
+        }
+    }
+
+    .button.three{
+        color: color.$color_text_secondary;;
+        svg{
+            fill: transparent;
+            stroke: color.$color_text_secondary;
+            stroke-width: 2px;
+        }
+    }
+    .slick-arrow.slick-prev{
+        &::before{
+            background-color: color.$color_background;
+            border-radius: 50%;
+        }
+    }
+    .slick-arrow.slick-next{
+        &::before{
+            background-color: color.$color_background;
+            border-radius: 50%;
+        }
+    }
+}
+
+@media screen and (max-width:1240px){
+    .collection{
+        .collection__button{
+            padding: 0 20%;
+        }
+    }
+}
+@media screen and (max-width:800px){
+    .collection{
+        .collection__button{
+            padding: 0 0;
+        }
+    }
+}
+
+@media screen and (max-width:500px){
+    .collection{
+        .collection__button{
+            padding: 0 0;
+            .button.three{
+                width: 140px !important;
+                position: relative;
+                svg{
+                    width: 140px;
+                }
+            }
+        }
+    }
+}

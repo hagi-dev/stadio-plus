@@ -1,0 +1,69 @@
+@use '../../assets/colors/index.scss' as color;
+
+.launch{
+    text-align: left;
+    padding: 0 8%;
+    height: 600px;
+    h1{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: color.$color_text_dark_primary;
+        font-size: 1.87rem;
+        text-align: left;
+    }
+    p{
+        font-family: 'Montserrat',sans-serif;
+        color: color.$color_text_dark_primary;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    h2{
+        margin-top: 45px;
+        margin-bottom: 61px;
+        font-family: 'Montserrat',sans-serif;
+        color: color.$color_text_secondary;
+        font-size: 1.12rem;
+        font-weight: 600;
+        text-align: left;
+        border-bottom: 1px solid color.$color_text_secondary;
+    }
+}
+
+.launch.true{
+    h1{
+        color: color.$color_text_light_primary;
+    }
+    p{
+        color: color.$color_text_light_primary;
+    }
+    
+    .slick-arrow.slick-prev{
+        &::before{
+            background-color: color.$color_background;
+            border-radius: 50%;
+        }
+    }
+    .slick-arrow.slick-next{
+        &::before{
+            background-color: color.$color_background;
+            border-radius: 50%;
+        }
+    }
+    .card__text{
+        h3{
+            color: color.$color_text_light_primary;
+        }
+        h4{
+            color: color.$color_text_light_primary;
+        }
+        h5{
+            color: color.$color_text_light_primary;
+        }
+    }
+    #cardBackground{
+        path{
+            fill:none;
+            stroke: color.$color_text_secondary;
+            stroke-width: 2px;
+        }
+    }
+}

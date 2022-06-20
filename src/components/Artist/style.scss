@@ -1,0 +1,47 @@
+@use '../../assets/colors/index.scss' as color;
+
+.artist{
+    width: 100%;
+    height: 600px;
+    margin-top: 10%;
+    .artist__header{
+        width: 100%;
+        height:34px;
+        background-color: color.$color_text_secondary;
+        ul{
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            display: flex;
+            padding: 0 10px;
+            justify-content: space-between;
+            align-items: center;
+            li{
+                color : color.$color_text_artist_header;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                letter-spacing: 20%;
+                font-size: 0.87rem;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.artist.true{
+    .artist__header{
+        ul{
+            li{
+              color:  color.$color_text_dark_primary;
+              opacity: 60%;
+            }
+        }
+    }
+    .content4{
+        h6{
+            color:  color.$color_text_light_primary;
+        }
+        h2{
+            color: color.$color_text_light_primary;
+        }
+    }
+}

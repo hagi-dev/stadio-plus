@@ -1,0 +1,57 @@
+@use '../../assets/colors/index.scss' as color;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+
+.button{
+    width: 190px;
+    height: 35px;
+    margin: 0 2px;
+    cursor: pointer;
+    background: transparent;
+    position: relative;
+    border: none;
+    z-index: 10;
+    color: color.$color_text_dark_primary;
+    transition: 0.1s ease-in;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    svg{
+        width: 190px;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+    }
+    &:active{
+        transform: scale(0.95);
+    }
+
+}
+
+.button.one{
+    svg{
+        fill: color.$color_button_primary;
+        transition: all 0.3s;
+        
+    }
+}
+
+.button.two{
+    svg{
+        fill: color.$color_button_secondary;
+    }
+}
+
+.button.three{
+    svg{
+        fill: color.$color_button_tertiary;
+        stroke: color.$color_text_secondary;
+        stroke-width: 2px;
+    }
+}
+
+.button:hover{
+   opacity: 0.8;
+}

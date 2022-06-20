@@ -1,0 +1,57 @@
+@use '../../assets/colors/index.scss' as color;
+
+.BlogSection{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 0 8%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    .BlogSection__title{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: left;
+        padding-bottom: 0%;
+        h1{
+            color: color.$color_text_dark_primary;
+            margin-top: 2%;
+            font-size: 1.8rem;
+            width: 100%;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+
+        }
+        h3{
+            width: 100%;
+            color: color.$color_text_dark_primary;
+            font-size: 0.9rem;
+            font-family: 'Montserrat',sans-serif;
+            letter-spacing: 10%;
+            font-weight: 400;
+        }
+
+
+    }
+
+    .BlogSection__Article{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5%;
+    }
+}
+.BlogSection.true{
+    .BlogSection__title{
+        h1{
+            color: color.$color_text_light_primary;
+        }
+        h3{
+            color: color.$color_text_light_primary;
+        }
+    }
+}

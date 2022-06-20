@@ -1,0 +1,32 @@
+
+.spinner{
+    width: 74px;
+    height: 34px;
+    cursor: pointer;
+    border-radius: 30px;
+    background-color: #013277;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .spinner__Shape{
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        position: absolute;
+        left: 4px;
+        top:3px;
+        background: #0039ff;
+        transform: translateX(0px);
+        transition: all 0.3s ;
+    }
+
+    .spinner__Shape.change{
+        transform: translateX(35px);
+    }
+}
+
+.spinner.change{
+    background-color: white;
+    border: 1px  solid #0039ff;
+}

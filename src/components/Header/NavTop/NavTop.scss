@@ -1,0 +1,109 @@
+@use '../../../assets/colors/index.scss' as color;
+
+
+.navTop{
+    width: 75%;
+    nav{
+        width: 100%;
+        ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .navTop__item{
+                a{
+                    text-decoration: none;
+                    color: color.$color_text_dark_primary;
+                    cursor: pointer;
+                    transition: all 0.3s;
+                    &:active{
+                        font-size: 0.95rem;
+                    }
+                }
+                color: color.$color_text_dark_primary;
+                opacity: 50%;
+                font-family: 'Montserrat',sans-serif;
+                font-size: 1rem;
+                font-weight: 600;
+                letter-spacing: 5%;
+            }
+        }
+    }
+    .menu{
+        display: none;
+        width: 40px;
+        height: 40px;
+        .one{
+            fill: white;
+        }
+        .two{
+            fill: white;
+        }
+        .three{
+            fill: white;
+        }
+    }
+}
+
+@media screen and (max-width:1240px) {
+
+    .navTop{
+        display: flex;
+        justify-content: flex-end;
+        nav{
+            display:none;
+            z-index: 999999999;
+            position: absolute;
+            left:0;
+            right: 0;
+            top: 100px;
+            ul{
+                flex-direction: column;
+                justify-content: space-around;
+                height: 50%;
+                .navTop__item{
+                    a{
+                        color: black;
+                    }
+                    color: black;
+                }
+            }
+        }
+        .menu{
+            display:block;
+            z-index: 9999;
+            cursor: pointer;
+            .one{
+                transition: all 0.5s;
+                transform: translate(0px,0px) ;
+            }
+            .one.active{
+                transform-origin: 70% 50%;
+                transform: translate(-80px,80px) rotate(45deg); 
+            }
+            .three{
+                transition: all 0.5s;
+                transform: rotate(0deg) translate(0px,0px);
+            }
+            .three.active{
+                transform-origin: 70% 50%;
+                transform: translate(-80px,-120px) rotate(315deg);
+            }
+            .two{
+                transition: all 0.3s;
+                opacity: 1;
+            }
+            .two.active{
+                opacity: 0;
+            }
+        }
+        .activeNav{
+            display: block;
+            z-index: 999;
+            height: 90vh;
+            width: 100vw;
+            background-color: white;
+        }
+    }
+    
+}

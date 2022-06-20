@@ -1,0 +1,29 @@
+.footer{
+    height: 451px;
+    background-color: #011C44;
+    width: 100%;
+    .footer__conatiner{
+        padding-top: 150px;
+        height: 200px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        h6{
+            text-align: center;
+            width: 100%;
+            font-family: 'Montserrat',sans-serif;
+            font-size: 0.87rem;
+            color: white;
+            font-weight: 200;
+        }
+        .footer__red{
+            width: 180px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+    }
+
+}

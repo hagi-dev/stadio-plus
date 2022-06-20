@@ -1,0 +1,60 @@
+@use '../../../assets/colors/index.scss' as color;
+
+.content1{
+    width: 100%;
+    height: 100%;
+    grid-area: contentBanner;
+    box-sizing: border-box;
+    
+    padding-top: 188px;
+    h1{
+        text-align: left;
+        font-size: 2.5rem;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: color.$color_text_dark_primary;
+        .h1__ntfs{
+            color: color.$color_button_primary;
+            font-size: 2.5rem;
+        }
+    }
+    .content__description{
+        color: color.$color_text_dark_primary;
+        font-size: 1rem;
+        text-align: left;
+        font-family: 'Montserrat',sans-serif;
+        width: 550px;
+        margin-top: 2%;
+    }
+    .content__button{
+        margin-top: 4%;
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width:1190px){
+    .content1{
+        display:flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-top: 120px;
+        h1{
+            text-align: center;
+        }
+        .content__description{
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width:400px){
+    .content1{
+        padding-top: 0px;
+        .content__button{
+            box-sizing: border-box;
+            width: 100%;
+            justify-content: center;
+        }
+    }
+}

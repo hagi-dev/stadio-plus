@@ -1,0 +1,54 @@
+@use '../../../assets/colors/index.scss' as color;
+
+.content4{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8% 30%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .content4__img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        img{
+            margin:1%;
+        }
+    }
+
+    h6{
+        margin-top: 1em;
+        width: 100%;
+        color: color.$color_text_dark_primary;
+        font-size: 1rem;
+        font-family: 'Montserrat',sans-serif;
+        font-weight: 400;
+    }
+    h2{
+        width: 100%;
+        margin-bottom: 0.9em;
+        font-size: 1.8rem;
+        color: color.$color_text_dark_primary;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: 600;
+    }
+
+}
+
+@media screen and(max-width:1300px) {
+    .content4{
+        padding: 4% 20%;
+    }
+}
+@media screen and(max-width:930px) {
+    .content4{
+        padding: 4% 10%;
+    }
+}
+@media screen and(max-width:600px) {
+    .content4{
+        padding: 4% 5%;
+    }
+}

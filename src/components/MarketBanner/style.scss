@@ -1,0 +1,30 @@
+
+.marketBanner__container{
+    height: 365px;
+    margin-top: 81px;
+    background-color: #0039FF;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .MarketBanner{
+        height: 300px;
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1.3fr 0.7fr;
+        grid-template-rows: 1fr 1fr;
+        background: linear-gradient(150deg, #010f24 95%,transparent 5%);
+        box-sizing: border-box;
+        grid-template-areas: 
+        "contentBanner imgBanner"
+        "contentBanner imgBanner";
+    }
+
+}
+
+@media screen and (max-width:1070px){
+    .MarketBanner{
+        display:flex !important;
+        justify-content: center;
+    }
+}

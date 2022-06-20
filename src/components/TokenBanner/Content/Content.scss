@@ -1,0 +1,86 @@
+@use '../../../assets/colors/index.scss' as color;
+
+.content5{
+    width: 100%;
+    height: 100%;
+    grid-area: contentBanner;
+    box-sizing: border-box;
+    padding-left: 10%;
+    padding-top: 5%;
+    h1{
+        text-align: left;
+        width: 100%;
+        font-size: 1.5rem;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: color.$color_text_dark_primary;
+        .h1__ntfs{
+            color: #0039FF;
+            font-size: 1.5rem;
+            
+        }
+    }
+    .content5__description{
+        color: color.$color_text_dark_primary;
+        font-size: 1rem;
+        text-align: left;
+        font-family: 'Montserrat',sans-serif;
+        width: 500px;
+        margin-top: 2%;
+        
+    }
+    .content5__form{
+        margin-top: 2%;
+        width: 63%;
+        display: flex;
+        justify-content: space-between;
+        input{
+            background: transparent;
+            border-radius: 10px;
+            border: 1px solid #fff;
+            color: #fff;
+            height: 34px;
+        }
+        #formImput{
+            padding-left: 10px;
+            width: clamp(300px,321px,60%);
+        }
+        #submit{
+            color: #fff;
+            width: 150px;
+            font-size: 0.7rem;
+        }
+    }
+    .content5__check{
+        margin-top: 5px;
+        text-align: left;
+        .checkBox{
+            background: transparent;
+            border: 1px solid #fff;
+        }
+        span{
+            margin-left: 5px;
+            font-family: 'Monrserrat',sans-serif;
+            font-size: 0.7rem;
+            color: white;
+        }
+    }
+}
+
+@media screen and(max-width:630px) {
+    .content5{
+        padding-right: 10%;
+        h1{
+            width: 100%;
+        }
+        .content5__description{
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .content5__form{
+            width: 100%;
+        }
+        .content5__check{
+            margin-top: 10px;
+        }
+    }
+}

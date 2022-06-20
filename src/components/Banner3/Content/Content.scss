@@ -1,0 +1,31 @@
+@use '../../../assets/colors/index.scss' as color;
+
+.content3{
+    width: 100%;
+    height: 100%;
+    grid-area: contentBanner;
+    box-sizing: border-box;
+    padding-top: 250px;
+    background: rgb(0,57,255);
+    background: radial-gradient(circle, rgb(7, 35, 139) 0%, rgba(1,28,68,1) 70%);
+    h1{
+        text-align: left;
+        font-size: 1.8rem;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: color.$color_text_dark_primary;
+        .h1__ntfs3{
+            color: color.$color_text_dark_primary;
+            font-size: 1rem;
+            font-family: 'Montserrat',sans-serif;
+            font-weight: 400;
+        }
+    }
+    .content__description{
+        color: color.$color_text_dark_primary;
+        font-size: 1rem;
+        text-align: left;
+        font-family: 'Montserrat',sans-serif;
+        width: 550px;
+        margin-top: 8%;
+    }
+}

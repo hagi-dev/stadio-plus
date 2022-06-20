@@ -1,0 +1,38 @@
+.continer{
+    background-color: #011C44;
+}
+.TokenBanner__container{
+    height: 365px;
+    margin-top: 81px;
+    background-color: transparent;
+    border-left: 40px solid #D6302A;
+    border-right: 40px solid #D6302A;
+    border-top: 40px solid #D6302A;
+    border-bottom: 40px solid #D6302A;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .TokenBanner{
+        height: 285px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1.3fr 0.7fr;
+        grid-template-rows: 1fr 1fr;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        box-sizing: border-box;
+        grid-template-areas: 
+        "contentBanner imgBanner"
+        "contentBanner imgBanner";
+    }
+
+}
+
+@media screen and (max-width:1070px){
+    .TokenBanner__container{}
+    .TokenBanner{
+        display:flex !important;
+        justify-content: center;
+    }
+}
